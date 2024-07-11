@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <h1
+    class="trn"
+    data-trn-key="pages.contact.title"
+  ></h1>
+
+  <form
+    id="contact-form"
+    class="flex col w-75"
+  >
+    <div class="flex col w-full h-start m-half">
+      <label
+        for="nickname"
+        data-trn-key="pages.contact.fieldNickname"
+      >* Nombre/Apodo</label>
+      <input
+        type="text"
+        id="nickname"
+        class="form-control validate"
+        placeholder="Bob | Bob_2140"
+        required="true"
+      >
+      <small
+        id="msg_nickname"
+        class="trn error msg absolute top right hidden"
+        data-trn-key="pages.contact.msgFieldEmpty"
+      ></small>
+    </div>
+
+    <div class="flex col w-full h-start m-half">
+      <label
+        for="email"
+        data-trn-key="pages.contact.fieldEmail"
+      >* Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control validate"
+        placeholder="email@domain.com"
+        required="true"
+      >
+      <small
+        id="msg_email"
+        class="trn error msg absolute top right hidden"
+        data-trn-key="pages.contact.msgFieldEmpty"
+      ></small>
+    </div>
+
+    <div class="flex col w-full h-start m-half">
+      <label
+        for="phone"
+        data-trn-key="pages.contact.fieldPhone"
+      >Teléfono/Id de Telegram</label>
+      <input
+        type="text"
+        id="phone"
+        class="form-control validate"
+        placeholder="+34 111 222 333 / @telegram_id"
+      >
+    </div>
+
+    <div class="flex col w-full h-start m-half">
+      <label
+        for="message"
+        data-trn-key="pages.contact.fieldMessage"
+      >* Mensaje</label>
+      <textarea
+        id="message"
+        class="form-control validate"
+        rows="5"
+        placeholder="Solicitudes, consultas, sugerencias, bugs, ..."
+        minlength="10"
+        required="true"
+      ></textarea>
+      <small
+        id="msg_message"
+        class="trn error msg absolute top right hidden"
+        data-trn-key="pages.contact.msgFieldEmpty"
+      ></small>
+    </div>
+
+    <small>
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <span
+        class="trn"
+        data-trn-key="pages.contact.msgDataSharing"
+      >
+        Los datos de contacto indicados NO serán compartidos ni almacenados.
+      </span>
+    </small>
+
+    <button
+      type="button"
+      class="btn submit"
+      onclick="onFormSubmit();return false;"
+    >
+      <i class="fa fa-message"></i>
+      <span
+        class="trn"
+        data-trn-key="pages.contact.btnSend"
+      >Enviar</span>
+    </button>
+  </form>
+
+  <span
+    id="msg_success"
+    class="trn msg fixed bottom shadow back-success hidden"
+    data-trn-key="pages.contact.msgSuccess"
+  ></span>
+
+  <span
+    id="msg_error"
+    class="trn msg fixed bottom shadow back-error hidden"
+    data-trn-key="pages.contact.msgError"
+  ></span>
+</body>
+
+</html>
