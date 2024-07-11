@@ -98,7 +98,7 @@ function loadProjects() {
       const _html = `
         <img
           class="img-preview"
-          src="../images/${project.preview}"
+          src="images/${project.preview}"
           alt="${project.title} preview"
         />
         <div class="data flex row-mobile">
@@ -109,7 +109,7 @@ function loadProjects() {
           >
             <img
               class="img"
-              src="../images/${project.logo}"
+              src="images/${project.logo}"
               alt="${project.title} logo"
             />
             <div class="link-text flex col h-start">
@@ -170,7 +170,7 @@ function loadAboutMe() {
           data-trn-key="pages.about.${item.id}_title"
         ></label>
         <div class="content">
-          <img src="../images/${item.image}" alt="${item.image}">
+          <img src="images/${item.image}" alt="${item.image}">
           <span
             class="trn"
             data-trn-key="pages.about.${item.id}"
