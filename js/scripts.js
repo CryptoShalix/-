@@ -164,11 +164,15 @@ function loadAboutMe() {
           type="checkbox"
           id="${item.id}_title"
         />
-        <label
-          for="${item.id}_title"
-          class="trn"
-          data-trn-key="pages.about.${item.id}_title"
-        ></label>
+        <div class="title flex row">
+          <i class="accordion-icon-hide fa fa-angles-right"></i>
+          <i class="accordion-icon-show fa fa-angles-down"></i>
+          <label
+            for="${item.id}_title"
+            class="trn"
+            data-trn-key="pages.about.${item.id}_title"
+          ></label>
+        </div>
         <div class="content">
           <img src="images/${item.image}" alt="${item.image}">
           <span

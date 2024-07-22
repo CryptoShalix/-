@@ -11,11 +11,11 @@ let translations = {
     nav: {
       home: "Proyectos",
       about: "Acerca de",
-      contact: "Contactar"
+      contact: "Contacto"
     },
     pages: {
       main: {
-        title: "Portfolio",
+        title: "Portafolio",
         projects: {
           bitakashico: "BitAkashico se presenta como el proyecto principal de @CryptoShalix, y aspira a convertirse en el lugar donde podamos encontrar las herramientas necesarias para entendernos a nosotros mismos <i>(Akasha)</i> y al mundo digital y financiero que tanto cambia <i>(Bit)</i>.<br/><br/>Desarrollada en Angular, con todos los estilos y componentes creados desde cero, sin librerías externas. Los datos se cargan de forma dinámica desde ficheros .json. Toda la lógica, diseño y traducciones son obra de CryptoShalix.",
           corazondejazmyn: "Corazón de Jazmyn presenta el arte de Jazmyn en una web sencilla y directa, que facilita visualizar las creaciones y contactar para hacer los pedidos deseados.<br/><br/>Desarrollada en Angular, con todos los estilos y componentes creados desde cero, sin librerías externas. Los datos e imagenes de la galeria se cargan de forma dinámica desde ficheros .json. Toda la lógica, diseño y traducciones son obra de CryptoShalix.",
